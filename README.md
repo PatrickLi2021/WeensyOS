@@ -7,6 +7,9 @@ The operating system kernel is the core program of the OS that runs with full ma
 
 Almost all modern operating systems use virtual memory. In order to implement full virtual memory with complete and correct memory isolation, this program implements interaction with page tables, kernel and user memory spaces, processes, and virtual and physical memories. In principle, WeensyOS can run an any computer with an x86-64 architecture. However, this program is run in QEMU.
 
+## Overview:
+WeensyOS is a miniature operating system that implements process memory isolation, virutal memory, and various system calls. 
+
 ## Memory System Layout:
 The WeensyOS memory system layout is described by the following constants:
 
