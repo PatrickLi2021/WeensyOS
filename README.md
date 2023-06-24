@@ -1,5 +1,8 @@
 # WeensyOS
 
+## Code:
+Available upon request (patrick_li@brown.edu or patrickli2021@gmail.com)
+
 ## Introduction and Motivation:
 Virtual memory is a component of the operating system that helps the OS safely run multiple applications atop the same physical memory (the computer's RAM). Each process receives its own virtual memory address space, and these virtual addresses are mapped to specific physical addresses. This gives the process an illusion of a contiguous memory space in which only its data exists.
 
@@ -39,6 +42,3 @@ The WeensyOS memory system layout is described by the following constants:
 - **Fork System Call:** Creates a new child process by duplicating the calling parent process. The form system call appears to return twice, one to each process - it returns 0 to the child process, and it returns the child's process ID to the parent process. This functionality was implemented by copying the process data in every application page shared by the two processes. Each virtual address in the old page table is examined and whenever the parent process has a user-accessible page at virtual addres _V_, fork allocates a new physical page _P_, copies the data from the parent's page into _P_ using `memcpy`, and maps page _P_ at address _V_ in the child process's page table.
 - **Shared Read-Only Memory:** Shares read-only pages between processes rather than copying them over. It does so by incrementing the reference counts of pages being shared between processes.
 - **Exit:** A system call that allows the current process to free its memory and resources and exit cleanly and gracefully.
-
-## Code:
-Available upon request (patrick_li@brown.edu or patrickli2021@gmail.com)
