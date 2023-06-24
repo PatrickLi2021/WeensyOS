@@ -10,6 +10,8 @@ Almost all modern operating systems use virtual memory. In order to implement fu
 ## Overview:
 WeensyOS is a miniature operating system that implements process memory isolation, virutal memory, and various system calls. 
 
+<img width="736" alt="Screenshot 2023-06-24 at 3 40 20 PM" src="https://github.com/PatrickLi2021/WeensyOS/assets/50870866/e38c066c-2823-4c87-8677-0d344693e662">
+
 ## Memory System Layout:
 The WeensyOS memory system layout is described by the following constants:
 
