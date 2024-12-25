@@ -1,8 +1,5 @@
 # WeensyOS
 
-## Code:
-Available upon request (patrick_li@brown.edu or patrickli2021@gmail.com)
-
 ## Introduction and Motivation:
 Virtual memory is a component of the operating system that helps the OS safely run multiple applications atop the same physical memory (the computer's RAM). Each process receives its own virtual memory address space, and these virtual addresses are mapped to specific physical addresses. This gives the process an illusion of a contiguous memory space in which only its data exists.
 
